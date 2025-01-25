@@ -6,48 +6,46 @@ using UnityEngine;
 
 public class managervariables : MonoBehaviour
 {
-    // Variables estáticas para almacenar la cantidad de cada tipo de piedra
-    public static int cantidadPiedraAzul = 0;
-    public static int cantidadPiedraRoja = 0;
-    public static int cantidadPiedraVerde = 0;
-    public static int cantidadPiedraBlanca = 0;
-    public static int cantidadPiedraGris = 0;
+    public static int cantidadpiedraazul = 0;
+    public static int cantidadpiedraroja = 0;
+    public static int cantidadpiedraverde = 0;
+    public static int cantidadpiedrablanca = 0;
+    public static int cantidadpiedragris = 0;
 
-    // Variables estáticas booleanas para verificar si el personaje tiene cada tipo de piedra
-    public static bool tienePiedraAzul = false;
-    public static bool tienePiedraRoja = false;
-    public static bool tienePiedraVerde = false;
-    public static bool tienePiedraBlanca = false;
-    public static bool tienePiedraGris = false;
+    public static bool tienepiedraazul = false;
+    public static bool tienepiedraroja = false;
+    public static bool tienepiedraverde = false;
+    public static bool tienepiedrablanca = false;
+    public static bool tienepiedragris = false;
 
-    public static void AgregarPiedra(string tipoPiedra)
+    public static void AgregarPiedra(string tipopiedra, int cantidad)
     {
-        switch (tipoPiedra)
+        switch (tipopiedra)
         {
             case "azul":
-                cantidadPiedraAzul++;
-                tienePiedraAzul = true;
-                Debug.Log("Piedra azul agregada. Cantidad: " + cantidadPiedraAzul);
+                cantidadpiedraazul += cantidad;
+                tienepiedraazul = cantidadpiedraazul > 0;
+                Debug.Log("Piedra azul. Cantidad: " + cantidadpiedraazul);
                 break;
             case "roja":
-                cantidadPiedraRoja++;
-                tienePiedraRoja = true;
-                Debug.Log("Piedra roja agregada. Cantidad: " + cantidadPiedraRoja);
+                cantidadpiedraroja += cantidad;
+                tienepiedraroja = cantidadpiedraroja > 0;
+                Debug.Log("Piedra roja. Cantidad: " + cantidadpiedraroja);
                 break;
             case "verde":
-                cantidadPiedraVerde++;
-                tienePiedraVerde = true;
-                Debug.Log("Piedra verde agregada. Cantidad: " + cantidadPiedraVerde);
+                cantidadpiedraverde += cantidad;
+                tienepiedraverde = cantidadpiedraverde > 0;
+                Debug.Log("Piedra verde. Cantidad: " + cantidadpiedraverde);
                 break;
             case "blanca":
-                cantidadPiedraBlanca++;
-                tienePiedraBlanca = true;
-                Debug.Log("Piedra blanca agregada. Cantidad: " + cantidadPiedraBlanca);
+                cantidadpiedrablanca += cantidad;
+                tienepiedrablanca = cantidadpiedrablanca > 0;
+                Debug.Log("Piedra blanca. Cantidad: " + cantidadpiedrablanca);
                 break;
             case "gris":
-                cantidadPiedraGris++;
-                tienePiedraGris = true;
-                Debug.Log("Piedra gris agregada. Cantidad: " + cantidadPiedraGris);
+                cantidadpiedragris += cantidad;
+                tienepiedragris = cantidadpiedragris > 0;
+                Debug.Log("Piedra gris. Cantidad: " + cantidadpiedragris);
                 break;
         }
     }

@@ -29,23 +29,23 @@ public class playermove : MonoBehaviour
         {
             if (other.gameObject.CompareTag("piedraazul"))
             {
-                managervariables.AgregarPiedra("azul");
+                managervariables.AgregarPiedra("azul",1);
             }
             else if (other.gameObject.CompareTag("piedraroja"))
             {
-                managervariables.AgregarPiedra("roja");
+                managervariables.AgregarPiedra("roja", 1);
             }
             else if (other.gameObject.CompareTag("piedraverde"))
             {
-                managervariables.AgregarPiedra("verde");
+                managervariables.AgregarPiedra("verde", 1);
             }
             else if (other.gameObject.CompareTag("piedrablanca"))
             {
-                managervariables.AgregarPiedra("blanca");
+                managervariables.AgregarPiedra("blanca", 1);
             }
             else if (other.gameObject.CompareTag("piedragris"))
             {
-                managervariables.AgregarPiedra("gris");
+                managervariables.AgregarPiedra("gris", 1);
             }
         }
     }

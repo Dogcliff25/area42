@@ -6,6 +6,11 @@ TagManager:
   tags:
   - piedraazul
   - salida
+  - receta1
+  - piedraverde
+  - piedragris
+  - piedrablanca
+  - piedraroja
   layers:
   - Default
   - TransparentFX
